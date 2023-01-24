@@ -8,7 +8,6 @@ export function useBookDetail(id) {
 
   useEffect(() => {
     const fetchData = async () => {
-      console.log('id', id);
       try {
         const data = await getBookById(id);
         setBook(data);
